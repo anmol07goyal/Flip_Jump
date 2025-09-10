@@ -2491,8 +2491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 2078160444}
-  _gravityScale: 10
-  _invertedGravityScale: -10
+  _gravityScale: 14
+  _invertedGravityScale: -14
   _slowDownTime: 2
 --- !u!1 &2129000706
 GameObject:
