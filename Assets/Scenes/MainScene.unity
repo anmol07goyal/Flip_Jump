@@ -1284,7 +1284,6 @@ GameObject:
   - component: {fileID: 1453796960}
   - component: {fileID: 1453796959}
   - component: {fileID: 1453796958}
-  - component: {fileID: 1453796957}
   - component: {fileID: 1453796956}
   m_Layer: 0
   m_Name: UpRoadQuad
@@ -1339,20 +1338,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.99999994}
   m_EdgeRadius: 0
---- !u!114 &1453796957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453796955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1345fa951320ca7478c98c5b887cbcbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bgMaterial: {fileID: 2100000, guid: 709c70e603ee0f241889212a06fa35f9, type: 2}
-  _scrollSpeed: 0.5
 --- !u!23 &1453796958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1568,7 +1553,6 @@ GameObject:
   - component: {fileID: 1717070863}
   - component: {fileID: 1717070862}
   - component: {fileID: 1717070861}
-  - component: {fileID: 1717070860}
   - component: {fileID: 1717070859}
   m_Layer: 0
   m_Name: DownRoadQuad
@@ -1623,20 +1607,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.99999994}
   m_EdgeRadius: 0
---- !u!114 &1717070860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717070858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1345fa951320ca7478c98c5b887cbcbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bgMaterial: {fileID: 2100000, guid: 709c70e603ee0f241889212a06fa35f9, type: 2}
-  _scrollSpeed: 0.5
 --- !u!23 &1717070861
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2210,6 +2180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bgMaterial: {fileID: 2100000, guid: 709c70e603ee0f241889212a06fa35f9, type: 2}
+  _roadMaterial: {fileID: 2100000, guid: dc1788196e815cd4797e1cc49d59a39a, type: 2}
   _scrollSpeed: 0.5
 --- !u!1 &2070633777
 GameObject:
