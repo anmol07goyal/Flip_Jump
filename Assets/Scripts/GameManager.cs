@@ -3,14 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public bool StartGame => _startGame;
-
-    private bool _startGame;
-
     #region GameObjects
 
     [SerializeField] private GameObject _player;
-    [SerializeField] private GameObject _endGamePanel;
 
     #endregion
 
@@ -33,10 +28,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    public void OnClickStartGame()
+    public void StartGame()
     {
-        _startGame = true;
-
         _player.SetActive(true);
 
         Time.timeScale = 1f;
@@ -44,7 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        _endGamePanel.SetActive(true);
+        ScoreHandler.Instance.SaveMaxScore();
+        UIManager.Instance.ShowEndGamePanel();
     }
 
     public void RestartGame()

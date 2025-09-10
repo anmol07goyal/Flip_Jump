@@ -4,6 +4,7 @@ using UnityEngine;
 public class SpikeObjectPool : MonoBehaviour
 {
     private List<GameObject> _pooledObjects = new();
+
     [SerializeField] private GameObject _spikePrefab;
 
     [SerializeField] private int _poolSize = 10;

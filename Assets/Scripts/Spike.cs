@@ -21,6 +21,8 @@ public class Spike : MonoBehaviour
         {
             // Deactivate the spike object and back to pool
             this.gameObject.SetActive(false);
+
+            ScoreHandler.Instance.UpdateScore();
         }
     }
 }
